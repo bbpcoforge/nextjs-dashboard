@@ -9,7 +9,7 @@ export const authConfig = {
     authorized({ auth, request: { nextUrl } }) {
       console.log("authConfig-authorized-auth", auth);
       console.log("authConfig-authorized-nextUrl", nextUrl);
-      /*
+      
       const isLoggedIn = !!auth?.user;
       const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
       if (isOnDashboard) {
@@ -18,7 +18,7 @@ export const authConfig = {
       } else if (isLoggedIn) {
         return Response.redirect(new URL('/dashboard', nextUrl));
       }
-      */
+      
       return true;
     },
   },
