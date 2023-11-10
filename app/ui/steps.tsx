@@ -5,7 +5,7 @@ export default function Steps({ listOfSteps, currentStep }: Steps) {
   const renderSteps = () => {
     return (
       <ol
-        className={`grid gri ${
+        className={`grid ${
           "grid-cols-" + listOfSteps.length
         } text-sm font-medium text-gray-500`}
       >
