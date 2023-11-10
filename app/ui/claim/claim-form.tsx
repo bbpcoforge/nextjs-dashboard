@@ -21,10 +21,12 @@ export default function ClaimForm() {
   return (
     <form action={dispatch}>
       <div className=" grid gap-6">
+        {/*
         <Steps
           listOfSteps={["1", "2", "3", "4", "5", "6"]}
           currentStep={step}
         />
+  */}
         <div className={`${step === 1 ? "" : "hidden"}`}>
           <InsuredDetails error={state.errors} />
         </div>
