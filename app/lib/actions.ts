@@ -140,3 +140,13 @@ export async function createClaim(prevState: State, formData: FormData) {
 
   return { message: null, errors: {} };
 }
+
+export async function createCustomerQuery(
+  prevState: State,
+  formData: FormData
+) {
+  const rawFormData1 = Object.fromEntries(formData.entries());
+  console.log("========createCustomerQuery rawFormData=========");
+  console.log(rawFormData1);
+  return { message: null, errors: {} };
+}
