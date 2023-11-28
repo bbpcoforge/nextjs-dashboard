@@ -90,3 +90,56 @@ export type Steps = {
   listOfSteps: string[];
   currentStep: number;
 };
+
+export type Author = {
+  name: string;
+  picture: string;
+};
+export type PostType = {
+  slug: string;
+  title: string;
+  date: string;
+  coverImage: string;
+  author: Author;
+  excerpt: string;
+  ogImage: {
+    url: string;
+  };
+  content: string;
+};
+export type FormFields = {
+  id: string;
+  title: string;
+  name: string;
+  inputType: string;
+  type: string;
+  value: string;
+  placeholder: string;
+  validationMessage: string;
+  validationRegex: string;
+};
+export type CmsPost = {
+  title: string;
+  excerpt: string;
+  dateCreated: string;
+  content: string;
+  itemDefaultUrl: string;
+  openGraphImage: {
+    url: string;
+  };
+  coverImage: [
+    {
+      url: string;
+    },
+  ];
+  authorOfPost: [
+    {
+      title: string;
+      picture: [
+        {
+          url: string;
+        },
+      ];
+    },
+  ];
+};
